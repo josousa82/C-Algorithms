@@ -1,0 +1,4 @@
+"/Users/sousaJ/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/202.7319.72/CLion.app/Contents/bin/cmake/mac/bin/cmake" -DCMAKE_BUILD_TYPE=Debug -D CMAKE_CXX_COMPILER=/usr/local/bin/g++-10 -G "CodeBlocks - Unix Makefiles" /Users/sousaJ/CLionProjects/CompetitiveProgramming
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /Users/sousaJ/CLionProjects/CompetitiveProgramming/cmake-build-debug
