@@ -1,30 +1,45 @@
-# Template-Repository
+# C++ ALgorithms and learning
 
-One Paragraph of project description goes here
+It's an incursion on C++ Algorihms while learning data Structures in Java 
 
 ### Build Status
 
 #### Code Quality
 * [![Codacy Badge](https://app.codacy.com/project/badge/Grade/4c04b09260a4462da1efd8abd560d74b)](https://www.codacy.com/manual/josousa82/Template-Repository/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=josousa82/Template-Repository&amp;utm_campaign=Badge_Grade)
 
-#### CircleCI
-* [![<CircleCI>](https://circleci.com/gh/josousa82/Template-Repository.svg?style=shield)](https://circleci.com/gh/josousa82/Template-Repository)
-  
-#### TravisCI
-* [![Build Status](https://travis-ci.com/josousa82/Template-Repository.svg?branch=master)](https://travis-ci.com/josousa82/Template-Repository) 
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+gcc++
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
+Project written in Jetbrains CLION. 
+To be able to include <bits/stdc++.h> there are a few configurations that are necessary in CLION.
+Follow the instructions to setup CLION.
+
+* To check wich g++ version is being used follow the instructions:
+```
+cd /
+cd usr/local/bin
+ls gcc-* 
+```
+
+* Search for gcc-8/10 whatever version you have
+* Press shift 2 times to call search
+* Write cmake and select cmake settings
+* Add the command below to CMake Options
 
 ```
-Give examples
+D CMAKE_CXX_COMPILER=/usr/local/bin/g++-8 // the g++-10 depends on the platform
 ```
 
+* On Build Options in CMake settings enter:
+
+```
+-- -j 10 (or whatever version corresponds to yours)
+```
+  
 ### Installing
 
 A step by step series of examples that tell you how to get a development env running
@@ -65,20 +80,9 @@ Give an example
 
 ## Deployment
 
-Add additional notes about how to deploy this on a live system
 
 ## Built With
 
-* [Maven](https://maven.apache.org/) - Dependency Management
-
-
-## Contributing
-
-Please read [CONTRIBUTING.md](link to contibuitions file) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
 
 ## License
 
