@@ -12,8 +12,20 @@ public:
 
 void printList(Node* node){
     while (node != NULL){
-        cout << node->data << " ";
+        cout << node->data << " " << "\n";
         node = node->next;
+    }
+}
+
+void  printMiddle(Node* node){
+    Node* fast_prt = node;
+    Node* slow_prt = node;
+    if(node != NULL){
+        while (fast_prt != NULL && fast_prt->next != NULL){
+            fast_prt = fast_prt->next->next;
+            slow_prt = slow_prt->next;
+        }
+        cout << "The middle node is: " << slow_prt->data << endl;
     }
 }
 
@@ -37,6 +49,7 @@ int main(){
 
     printList(head);
 
-    return 0;
+    printMiddle(head);
 
+    return 0;
 }
