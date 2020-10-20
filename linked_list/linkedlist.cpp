@@ -6,8 +6,28 @@ using namespace std;
 
 class Node {
 public:
+
+    Node(int i) {
+        this->data = i;
+    }
+
+    Node() {;
+    }
+
     int data;
     Node* next;
+};
+
+class SinglyLinkedList {
+public:
+    Node* node;
+    Node* headNode;
+    Node* nextNode;
+
+    SinglyLinkedList(Node *node) {
+        this->node = node;
+    }
+
 };
 
 void printList(Node* node){
@@ -27,6 +47,12 @@ void  printMiddle(Node* node){
         }
         cout << "The middle node is: " << slow_prt->data << endl;
     }
+}
+
+void push(int data){
+    Node* node;
+
+
 }
 
 int main(){
